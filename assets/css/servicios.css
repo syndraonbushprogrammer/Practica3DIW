@@ -1,0 +1,118 @@
+body {
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+.gradient-gold {
+    background: linear-gradient(90deg, #FBE134, #E4B61A);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 1); /*Cambia el borde del botón hamburguesa*/
+}
+
+nav {
+    border-left: 5px solid #FBE134;
+    border-right: 5px solid #E4B61A;
+    border-bottom: 5px solid #FBE134;
+
+}
+
+.enlaces {  
+    transition: background 1s ease-in-out, color 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.enlaces:hover {
+    background: linear-gradient(90deg, #FBE134, #E4B61A) !important;
+    color: black !important;
+}
+
+.enlacesFooter{
+    color: black !important;
+}
+
+.enlacesFooter:hover{
+    color: red !important;
+}
+
+.actual{
+    color: black !important;
+    background: linear-gradient(90deg, #FBE134, #E4B61A);
+}
+
+/*CLASES PARA SCROLLEAR HASTA EL NAV*/
+
+/* Botón flotante */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-to-top span {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg); /* Flecha hacia arriba */
+}
+
+/* Mostrar el botón cuando se haya hecho scroll */
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-Servicios {
+    background: linear-gradient(90deg, #FBE134, #E4B61A);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out, filter 0.5s ease-in-out;
+    border:black solid 2px;
+}
+.btn-Servicios span {
+    display: inline-block;
+    transform: skewX(15deg);
+}
+
+/* Cuando el cursor pase sobre el botón */
+.btn-Servicios:hover {
+    background: black;
+    color: white; /* Mantiene el texto blanco */
+    filter: brightness(0.8); /* Le da un efecto de desvanecimiento suave */
+}
+
+.bg-1{
+    background: linear-gradient(90deg, #FBE134, #E4B61A);
+}
+
+.bg-2{
+    background: linear-gradient(90deg, #E4B61A, #FBE134);
+}
+
+.imagenes{
+    border-radius: 30px;
+}
